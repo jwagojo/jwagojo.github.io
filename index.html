@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css" />
+</head>
+<body>
+    <div id="ChaChing">
+        <div id="Title">ChaChing</div>
+        <div id="Register">
+            <div><input id = "billTotal" value = 0.00 readonly></div>
+            <div id="oneDollar">
+                <input id= "oneDollarTotal" class = "total" value = 0.00 readonly>
+                <button onclick="addtoTotal(0)">+$1</button>
+                $1
+                <button onclick="subtoTotal(0)">-$1</button>
+                <input id= "oneDollarCount" class = "count" value = 0>
+            </div>
+            <div id="fiveDollar">
+                <input id= "fiveDollarTotal" class = "total"value = 0.00 readonly>
+                <button onclick="addtoTotal(1)">+$5</button>
+                $5
+                <button onclick="subtoTotal(1)">-$5</button>
+                <input id= "fiveDollarCount" class = "count" value = 0>
+            </div>
+            <div id="tenDollar">
+                <input id= "tenDollarTotal" class = "total" value = 0.00 readonly>
+                <button onclick="addtoTotal(2)">+$10</button>
+                $10
+                <button onclick="subtoTotal(2)">-$10</button>
+                <input id= "tenDollarCount" class = "count" value = 0>
+            </div>
+            <div id="twentyDollar">
+                <input id= "twentyDollarTotal" class = "total" value = 0.00 readonly>
+                <button onclick="addtoTotal(3)">+$20</button>
+                $20
+                <button onclick="subtoTotal(3)">-$20</button>
+                <input id= "twentyDollarCount" class = "count" value = 0>
+            </div>
+            <div id="fiftyDollar">
+                <input id= "fiftyDollarTotal" class = "total" value = 0.00 readonly>
+                <button onclick="addtoTotal(4)">+$50</button>
+                $50
+                <button onclick="subtoTotal(4)">-$50</button>
+                <input id= "fiftyDollarCount" class = "count" value = 0>
+            </div>
+            <div id="hundredDollar">
+                <input id= "hundredDollarTotal" class = "total" value = 0.00 readonly>
+                <button onclick="addtoTotal(5)">+$100</button>
+                $100
+                <button onclick="subtoTotal(5)">-$100</button>
+                <input id= "hundredDollarCount" class = "count" value = 0 >
+            </div>
+            <div id="penny">
+                <input id= "pennyTotal" class = "total" value = 0.00 readonly>
+                <button onclick="addtoTotal(6)">+$.01</button>
+                Pennies
+                <button onclick="subtoTotal(6)">-$.01</button>
+                <input id= "pennyCount" class = "count" value = 0>
+            </div>
+            <div id="nickel">
+                <input id= "nickelTotal" class = "total" value = 0.00 readonly>
+                <button onclick="addtoTotal(7)">+$.05</button>
+                Nickels
+                <button onclick="subtoTotal(7)">-$.05</button>
+                <input id= "nickelCount" class = "count" value = 0>
+            </div>
+            <div id="dime">
+                <input id= "dimeTotal" class = "total" value = 0.00 readonly>
+                <button onclick="addtoTotal(8)">+$.10</button>
+                Dimes
+                <button onclick="subtoTotal(8)">-$.10</button>
+                <input id= "dimeCount" class = "count" value = 0>
+            </div>
+            <div id="quarter">
+                <input id= "quarterTotal" class = "total" value = 0.00 readonly>
+                <button onclick="addtoTotal(9)">+$.25</button>
+                Quarters
+                <button onclick="subtoTotal(9)">-$.25</button>
+                <input id= "quarterCount" class = "count" value = 0>
+            </div>
+            <div id="pennyRolls">
+                <input id= "pennyRollsTotal" class = "total" value = 0.00 readonly>
+                <button onclick="addtoTotal(10)">+$.50</button>
+                Roll of Pennies
+                <button onclick="subtoTotal(10)">-$.50</button>
+                <input id= "pennyRollsCount" class = "count" value = 0>
+            </div>
+            <div id="nickelRolls">
+                <input id= "nickelRollsTotal" class = "total" value = 0.00 readonly>
+                <button onclick="addtoTotal(11)">+$2</button>
+                Roll of Nickels
+                <button onclick="subtoTotal(11)">-$2</button>
+                <input id= "nickelRollsCount" class = "count" value = 0>
+            </div>
+            <div id="dimeRolls">
+                <input id= "dimeRollsTotal" class = "total" value = 0.00 readonly>
+                <button onclick="addtoTotal(12)">+$5</button>
+                Roll of Dimes
+                <button onclick="subtoTotal(12)">-$5</button>
+                <input id= "dimeRollsCount" class = "count" value = 0>
+            </div>
+            <div id="quarterRolls">
+                <input id= "quarterRollsTotal" class = "total" value = 0.00 readonly>
+                <button onclick="addtoTotal(13)">+$10</button>
+                Roll of Quarters
+                <button onclick="subtoTotal(13)">-$10</button>
+                <input id= "quarterRollsCount" class = "count" value = 0>
+            </div>
+            <div id="clear">
+                <button onclick="clearTotal()">C</button>            
+            </div> 
+            <div id="Close Register">
+                <button onclick="closeRegister()">Close Register</button>
+                <p>Register: <br><span id="outcomeOfRegister"></span></p>
+            </div>             
+        </div>
+    </div>
+    
+
+    <script src="main.js"></script>
+    
+</body>
+</html>
