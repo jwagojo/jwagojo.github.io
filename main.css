@@ -73,5 +73,5 @@ button{
 body{
     width: 100vw;
     margin:0;
-    overflow: 0;
+    overflow: hidden;
 }
