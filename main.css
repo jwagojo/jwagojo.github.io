@@ -10,6 +10,7 @@ button{
     font-family: Arial;
     cursor: pointer;
     margin: auto;
+    touch-action: manipulation;
 }
 
 #clear{
