@@ -11,7 +11,10 @@ button{
     cursor: pointer;
     margin: auto;
     touch-action: manipulation;
+    text-align: center;
+    display:inline;
 }
+
 
 #clear{
     width: 90px;
