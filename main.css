@@ -1,6 +1,6 @@
 button{
-    width: 50px;
-    height: 50px;
+    width: 49px;
+    height: 49px;
     border-radius: 40px;
     border: none;
     background-color: rgb(47, 42, 42);
@@ -12,37 +12,57 @@ button{
     margin: auto;
 }
 
+#clear{
+    width: 90px;
+    height: 30px;
+    border-radius: 5px;
+}
+#cRegister{
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+}
+
 #Title {
-    font-family: Arial;
+    font-family: 'Times New Roman';
     font-weight: bolder;
     background-color: rgb(200,12,52);
     color: white;
+    -webkit-text-stroke: .1px black;
     border-style: solid;
     border-color: rgb(0, 0, 0);
     border-width: 5px;
     top: 1%;
     font-size: 3rem;
     border-radius: 1px;
-    width: 1700px;
-    height: 50px;
+    width: 100%;
+    height: 100%;
     text-align: center;
-    right: 100px;
-    margin:auto;
 }
 #Register {
     font-family: Arial;
     font-weight: bolder;
     font-size: 1.5rem;
     color: rgb(47, 42, 42);
+    right: 10px;
     position: relative;
-    right:120px;
     text-align: center;
     margin:auto;
     background-color: bisque;
-    width: 2360 px;
+}
+#board {
+    font-family: Arial;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    color: rgb(47, 42, 42);
+    top: 5px;
+    position: relative;
+    text-align: center;
+    margin:auto;
+    background-color: bisque;
 }
 .count{
-    width:40px;
+    width:120px;
     height: 30px;
     border-radius: 15px;
     border-style: solid;
@@ -63,16 +83,39 @@ button{
 }
 #billTotal{
     width:120px;
-    height: 30px;
+    height: 25px;
+    right:10px;
     border-radius: 10px;
     border-style: solid;
     border-color: rgb(47, 42, 42);
     text-align: center;
     font-family: Arial;
     font-size: 1rem;
+    font-weight: bold;
 }
 body{
     width: 100vw;
     margin:0;
     overflow-x: hidden;
+    background-color: bisque;
+}
+#outcome{
+    font-family: 'Times New Roman';
+    font-weight: bolder;
+    font-size: 2rem;
+    color: rgb(47, 42, 42);
+    right: 10px;
+    top: 10px;
+    position: relative;
+    text-align: center;
+    margin:auto;
+    background-color: bisque;
+}
+#outcomeOfRegister{
+    border-radius: 15px;
+    border-color: rgb(47, 42, 42);
+    text-align: center;
+    top: 100px;
+    font-family: Arial;
+    font-size: 1rem;
 }

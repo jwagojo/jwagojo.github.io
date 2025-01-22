@@ -128,7 +128,7 @@ function calculateTotal(){
 function closeRegister(){
     if(calculateTotal() > 200){
     var j = 0;
-    var text = "<br>Bills in the envelope:<br>";
+    var text = "Bills in the envelope:<br>";
     var moneyInEnvelope = 0.00;
     revenue = Math.floor(calculateTotal()-200);
     console.log(revenue);
@@ -137,7 +137,9 @@ function closeRegister(){
         revenue -= bills*money[i].value;
         console.log(bills);
         moneyInEnvelope += bills*money[i].value;
-        text += "$" + money[i].value + ": " + bills + "<br>"; 
+        if(bills != 0){
+            text += "$" + money[i].value + ": " + bills + "<br>";
+        }
     }
     for(let i = 3; i >= 0; i--){
         if(revenue > 5){
@@ -151,7 +153,7 @@ function closeRegister(){
         } 
     }
     var moneyInRegister = (calculateTotal() - moneyInEnvelope).toFixed(2);
-    text += "<br>money in envelope: $" + moneyInEnvelope.toFixed(2) + "<br>" + "money in register: $" + moneyInRegister;
+    text += "money in envelope: $" + moneyInEnvelope.toFixed(2) + "<br>" + "money in register: $" + moneyInRegister;
     }else {
         text = "There must be more than $200 in the cash register <br> to close for the day";
     }
@@ -162,9 +164,9 @@ function closeRegister(){
 function clearTotal(){
     for(let i = 0; i < moneyAmount.length; i++){
         moneyAmount[i].total = 0.00;
-        money[i].TotalID.value = 0.00;
+        money[i].TotalID.value = moneyAmount[i].total.toFixed(2);
         moneyAmount[i].count = 0;
         money[i].countID.value = 0;
     }
-    Total.value = 0.00;
+    Total.value = (0.00).toFixed(2);
 }
