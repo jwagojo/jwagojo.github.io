@@ -26,6 +26,7 @@ button{
     width: 1700px;
     height: 50px;
     text-align: center;
+    right: 100px;
     margin:auto;
 }
 #Register {
@@ -38,7 +39,7 @@ button{
     text-align: center;
     margin:auto;
     background-color: bisque;
-    width: 110vw;
+    width: 2360 px;
 }
 .count{
     width:40px;
@@ -73,5 +74,5 @@ button{
 body{
     width: 100vw;
     margin:0;
-    overflow: hidden;
+    overflow-x: hidden;
 }
