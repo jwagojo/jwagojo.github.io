@@ -32,6 +32,8 @@ const outcomeOfRegister = document.getElementById("outcomeOfRegister");
 
 const counts = document.querySelectorAll(".count");
 
+const clickSound = document.getElementById('clickSound');
+
 const idIndexPair = Array.from(counts).map((input, index) => ({
     id: input.id,
     index: index
@@ -81,6 +83,7 @@ function addtoTotal(indx){
         moneyAmount[indx].total += money[indx].value;
         money[indx].countID.value = moneyAmount[indx].count;
         money[indx].TotalID.value = moneyAmount[indx].total.toFixed(2);
+        clickSound.play();
         calculateTotal();
 }
 
