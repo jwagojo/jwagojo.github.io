@@ -145,7 +145,7 @@ function closeRegister(){
         }
     }
     for(let i = 3; i >= 0; i--){
-        if(revenue > 5){
+        if(revenue > 4){
             const bills = Math.min((Math.floor(revenue/(money[i].value))), (moneyAmount[i].count)-1 || 0);
             revenue -= bills*money[i].value;
             console.log(bills);
@@ -161,7 +161,6 @@ function closeRegister(){
         text = "There must be more than $200 in the cash register <br> to close for the day";
     }
     outcomeOfRegister.innerHTML = text;
-
 }
 
 function clearTotal(){
